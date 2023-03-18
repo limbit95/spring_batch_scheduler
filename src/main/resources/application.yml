@@ -1,0 +1,20 @@
+server:
+  port: 8081
+spring:
+  batch:
+    jdbc:
+      initialize-schema: always
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3300/board?useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: test1234
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+logging:
+  level:
+    root: info
